@@ -51,8 +51,10 @@
 
 .photo img{
     background-color: rgb(223, 233, 235);
-    height: auto;
-    width: 60%;
+    /* height: auto; */
+    /* width: 60%; */
+    height: 300px;
+    width: 300px;
     box-shadow: 4px 12px 20px 1px rgb(30, 58, 138);
 }
 
@@ -114,6 +116,17 @@
     .menu.active{
         display: flex;
         justify-content: center;
+    }
+
+    .photo img
+    {
+        background-color: rgb(223, 233, 235);
+        /* height: auto; */
+        /* width: 60%; */
+        height: 300px;
+        width: 300px;
+        box-shadow: 4px 12px 20px 1px rgb(30, 58, 138);
+        margin-top: 30px;
     }
 
     
