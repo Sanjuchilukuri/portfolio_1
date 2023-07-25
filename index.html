@@ -4,21 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <!-- animate -->
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
     
     <title>sanju - porfolio</title>
+    <!-- icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- own css -->
     <link rel="stylesheet" type="text/css"  href="index.css">
     <link rel="icon" href="./Images/icon.png" type="image">
 
 
 <script type="text/JavaScript">
-
+    
     document.addEventListener("DOMContentLoaded", function() {
         let toggle = document.querySelector(".toggle");
         let menu = document.querySelector(".menu");
@@ -31,7 +37,6 @@
     var textArray = ['I Am Sanju', 'Enthusiastic Coder', 'Full Stack Developer', 'DevOps Engineer'];
     var index = 0;
     var charIndex = 0;
-
     function type() {
         if(charIndex < textArray[index].length) {
             document.getElementById('animated-text').textContent += textArray[index].charAt(charIndex);
@@ -60,17 +65,12 @@
     document.addEventListener('DOMContentLoaded', function(event) {
         setTimeout(type, 200);
     });
-
-    function downloadResume()
-    {
-        window.location.href = "./Images/Resume.pdf"; 
-    }
 </script>
 
 
 </head>
 <body>
-    <div class="nav_bar ">
+    <div class="nav_bar sticky-top" >
         <div class="name">Sanju</div>
         <i class="fas fa-bars toggle"></i>
         <div class="menu">
@@ -79,11 +79,12 @@
                 <li><a href="#">Skills</a></li>
                 <li><a href="#">Code potray</a></li>
                 <li><a href="#">Certifications</a></li>
-                <li><a href="#">Project</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">contact</a></li>
             </ul>
         </div>
     </div>
-    <div class="container qwe">
+    <div class="container ">
         <div class=" row pt-5 mt-5 ">
             <div class="col-lg mx-auto pt-5 mt-5 text-center fw-bolder  " >
                 <!-- code here -->
@@ -98,6 +99,31 @@
             </div>
         </div>
     </div>
+
+
+    <div class="about mx-auto pt-5 mt-5  " style="background-color: white; color: black;">
+        <h1 data-aos="fade-down"  class="fs-1 text-center pb-3 aos-init aos-animate" >About</h1>
+        
+        <div class="container">
+            <div class="row pt-3">
+                <div class="col-lg mt-5 ms-3 mx-auto text-center justify-content-start"  >
+                        <p data-aos="fade-right" class="pl-3 fs-4 " >A motivated web developer, I have honed my skills in HTML, CSS, JavaScript, Bootstrap, and SQL through over 1000 hours of coding experience and extensive study 
+                        of data structures and algorithms. Skilled in C++, Java, Python, and exploring DevOps practices, I have a robust understanding of cloud computing and Linux. 
+                        With experience developing team projects and a dedication to problem-solving, I am eager to contribute to a dynamic tech company.
+                    </p>
+                </div>
+
+                <div class="col-lg mt-5 pt-5  mx-auto ">
+                    <img data-aos="fade-left" class="rounded-4 d-grid justify-content-center align-items-center mx-auto aos-init" src="./Images/About_image.gif" alt="Sanju" style="height: 250px; width: 350px; box-shadow: 4px 12px 20px 1px rgb(30, 58, 138);">
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 </html>
