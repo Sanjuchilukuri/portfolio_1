@@ -8,7 +8,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background-color: #34495e; */
+    background-color: white;
     border-bottom:2px black solid ;
 }
 
@@ -56,15 +56,16 @@
     height: 300px;
     width: 300px;
     box-shadow: 4px 12px 20px 1px rgb(30, 58, 138);
-    margin-left:30px;
+    margin-top: 30px;
 }
+
 
 #animated-text {
     color: blue;
     font-size: 2em;  /* Adjust as per your requirement */
     border-right: .1em solid blue;
     white-space: pre;
-    overflow: hidden;
+    /* overflow: hidden; */
     animation: typing 3s steps(40, end), blink 1s step-end infinite;
 }
 
@@ -83,10 +84,13 @@
     font-size: 3rem;
 }
 
-.qwe div div a{
-    text-decoration: none !important;
-}
 
+
+.about h1:hover{
+    text-decoration: underline;
+    color: rgb(136, 136, 228);
+    text-decoration-color:rgb(136, 136, 230) ;
+}
 @media (max-width:750px) {
     .toggle{
         display: block;
