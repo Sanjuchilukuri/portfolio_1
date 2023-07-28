@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- animate -->
-    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- bootstrap -->
@@ -21,7 +20,6 @@
     <!-- own css -->
     <link rel="stylesheet" type="text/css"  href="index.css">
     <link rel="icon" href="./Images/icon.png" type="image">
-
 
 <script type="text/JavaScript">
     
@@ -70,13 +68,14 @@
 
 </head>
 <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
     <div class="nav_bar sticky-top" >
         <div class="name">Sanju</div>
         <i class="fas fa-bars toggle"></i>
         <div class="menu">
             <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Skills</a></li>
+                <li><a href="#a">About</a></li>
+                <li><a href="#s">Skills</a></li>
                 <li><a href="#">Code potray</a></li>
                 <li><a href="#">Certifications</a></li>
                 <li><a href="#">Projects</a></li>
@@ -84,6 +83,7 @@
             </ul>
         </div>
     </div>
+
     <div class="container ">
         <div class=" row pt-5 mt-5 ">
             <div class="col-lg mx-auto pt-5 mt-5 text-center fw-bolder  " >
@@ -101,9 +101,8 @@
     </div>
 
 
-    <div class="about mx-auto pt-5 mt-5  " style="background-color: white; color: black;">
+    <div id="a" class="about mx-auto pt-5 mt-5  " style="background-color: white; color: black;">
         <h1 data-aos="fade-down"  class="fs-1 text-center pb-3 aos-init aos-animate" >About</h1>
-        
         <div class="container">
             <div class="row pt-3">
                 <div class="col-lg mt-5 ms-3 mx-auto text-center justify-content-start"  >
@@ -112,14 +111,98 @@
                         With experience developing team projects and a dedication to problem-solving, I am eager to contribute to a dynamic tech company.
                     </p>
                 </div>
-
                 <div class="col-lg mt-5 pt-5  mx-auto ">
                     <img data-aos="fade-left" class="rounded-4 d-grid justify-content-center align-items-center mx-auto aos-init" src="./Images/About_image.gif" alt="Sanju" style="height: 250px; width: 350px; box-shadow: 4px 12px 20px 1px rgb(30, 58, 138);">
                 </div>
-                
             </div>
         </div>
     </div>
+
+
+    <div id="s" class="about mx-auto pt-5 mt-5  " style="background-color: white; color: black;">
+        <h1 data-aos="fade-right" class="fs-1 text-center pb-5" >Skills</h1>
+
+        <div class="container mx-auto">
+            <div data-aos="fade-up" class="row row-cards me-lg-5 ms-lg-5 mx-auto">
+                <div class="col-lg-3 col-md-4 col-6 text-center " >
+                    <div class="card flex-column flex-grow-1 rounded-4 " style="background-color: rgb(192, 238, 242);  box-shadow: 4px 12px 20px 1px white;">
+                        <img class="card-body mx-auto img-fluid" src="Images/HTML.png" style="width: 9rem; height: 8rem;"/>
+                        <p class="fw-bolder">HTML</p>
+                    </div>    
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 text-center " >
+                    <div class="card flex-column flex-grow-1 rounded-4" style="background-color: rgb(192, 238, 242);  box-shadow: 4px 12px 20px 1px white;">
+                        <img class="card-body mx-auto img-fluid" src="Images/CSS.png" style="width: 9rem; height: 8rem"/>
+                        <p class="fw-bolder">CSS</p>
+                    </div>    
+                </div>
+                <div class="col-lg-3 col-md-4 col-6  text-center " >
+                    <div class="card flex-column flex-grow-1 rounded-4" style="background-color: rgb(192, 238, 242);  box-shadow: 4px 12px 20px 1px white;">
+                        <img class="card-body mx-auto img-fluid" src="Images/JS.png" style="width: 9rem; height: 8rem"/>
+                        <p class="fw-bolder">JS</p>
+                    </div>    
+                </div>
+                <div class="col-lg-3 col-md-4 col-6  text-center d-flex" >
+                    <div class="card flex-column flex-grow-1 rounded-4" style="background-color: rgb(192, 238, 242);  box-shadow: 4px 12px 20px 1px white;">
+                        <img class="card-body mx-auto img-fluid" src="Images/BOOTSTRAP.png" style="width: 9rem; height: 8rem"/>
+                        <p class="fw-bolder">Bootstrap</p>
+                    </div>    
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 text-center " >
+                    <div class="card flex-column flex-grow-1 rounded-4" style="background-color: rgb(192, 238, 242);  box-shadow: 4px 12px 20px 1px white;">
+                        <img class="card-body mx-auto img-fluid" src="Images/c.png" style="width: 10rem; height: 8rem"/>
+                        <p class="fw-bolder">C</p>
+                    </div>    
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 text-center " >
+                    <div class="card flex-column flex-grow-1 rounded-4" style="background-color: rgb(192, 238, 242);  box-shadow: 4px 12px 20px 1px white;">
+                        <img class="card-body mx-auto img-fluid" src="Images/cpp.png" style="width: 9rem; height: 8rem"/>
+                        <p class="fw-bolder">CPP</p>
+                    </div>    
+                </div>
+                <div class="col-lg-3 col-md-4 col-6  text-center " >
+                    <div class="card flex-column flex-grow-1 rounded-4" style="background-color: rgb(192, 238, 242);  box-shadow: 4px 12px 20px 1px white;">
+                        <img class="card-body mx-auto img-fluid" src="Images/python.png" style="width: 9rem; height: 8rem"/>
+                        <p class="fw-bolder">Python</p>
+                    </div>    
+                </div>
+                <div class="col-lg-3 col-md-4 col-6  text-center " >
+                    <div class="card flex-column flex-grow-1 rounded-4" style="background-color: rgb(192, 238, 242);  box-shadow: 4px 12px 20px 1px white;">
+                        <img class="card-body mx-auto img-fluid" src="Images/java.png" style="width: 9rem; height: 8rem"/>
+                        <p class="fw-bolder">JAVA</p>
+                    </div>    
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 text-center " >
+                    <div class="card flex-column flex-grow-1 rounded-4" style="background-color: rgb(192, 238, 242);  box-shadow: 4px 12px 20px 1px white;">
+                        <img class="card-body mx-auto img-fluid" src="Images/Aws.png" style="width: 10rem; height: 8rem"/>
+                        <p class="fw-bolder">AWS</p>
+                    </div>    
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 text-center " >
+                    <div class="card flex-column flex-grow-1 rounded-4" style="background-color: rgb(192, 238, 242);  box-shadow: 4px 12px 20px 1px white;">
+                        <img class="card-body mx-auto img-fluid" src="Images/DevOps.png" style="width: 9rem; height: 8rem"/>
+                        <p class="fw-bolder">DevOps</p>
+                    </div>    
+                </div>
+                <div class="col-lg-3 col-md-4 col-6  text-center " >
+                    <div class="card flex-column flex-grow-1 rounded-4" style="background-color: rgb(192, 238, 242);  box-shadow: 4px 12px 20px 1px white;">
+                        <img class="card-body mx-auto img-fluid" src="Images/Linux.png" style="width: 9rem; height: 8rem"/>
+                        <p class="fw-bolder">Linux</p>
+                    </div>    
+                </div>
+                <div class="col-lg-3 col-md-4 col-6  text-center " >
+                    <div class="card flex-column flex-grow-1 rounded-4" style="background-color: rgb(192, 238, 242);  box-shadow: 4px 12px 20px 1px white;">
+                        <img class="card-body mx-auto img-fluid" src="Images/MySQL.png" style="width: 9rem; height: 8rem"/>
+                        <p class="fw-bolder">My SQL</p>
+                    </div>    
+                </div>
+            </div>
+        </div>
+
+    </div>
+        
+
+    
 
     <script>
         AOS.init();
