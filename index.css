@@ -91,6 +91,19 @@
     color: rgb(136, 136, 228);
     text-decoration-color:rgb(136, 136, 230) ;
 }
+.card {
+  transform: scale(0.9); /* This will decrease the size of the card by 10% */
+}
+.card:hover {
+  transform: scale(0.94); /* This will increase the size of the card by 5% */
+  transition: transform 0.3s; /* This will animate the transformation over 0.3 seconds */
+}
+
+.row-cards {
+    --bs-gutter-x: 0.0rem; /* Adjust this value to increase or decrease the horizontal gap */
+}
+
+
 @media (max-width:750px) {
     .toggle{
         display: block;
