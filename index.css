@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 .nav_bar{
     display: flex;
     justify-content: space-between;
@@ -11,22 +10,18 @@
     background-color: white;
     border-bottom:2px black solid ;
 }
-
 .name{
     color: black;
     font-size: 24px;
     margin: 14px;
     font-weight: 700;
 }
-
 .menu ul{
     display: flex;
 }
-
 .menu li{
     list-style: none;
 }
-
 .menu li a{
     text-decoration: none;
     display: block;
@@ -35,12 +30,9 @@
     padding: 16px 20px;
     color: black;
 }
-
-
 .menu li:hover{
     background-color: rgb(232, 244, 255);
 }
-
 .toggle{
     position: absolute;
     top: 16px;
@@ -48,7 +40,6 @@
     font-size: 20px;
     display: none;
 }
-
 .photo img{
     background-color: rgb(223, 233, 235);
     /* height: auto; */
@@ -58,8 +49,6 @@
     box-shadow: 4px 12px 20px 1px rgb(30, 58, 138);
     margin-top: 30px;
 }
-
-
 #animated-text {
     color: blue;
     font-size: 2em;  /* Adjust as per your requirement */
@@ -68,24 +57,17 @@
     /* overflow: hidden; */
     animation: typing 3s steps(40, end), blink 1s step-end infinite;
 }
-
 @keyframes typing {
     from { width: 0; }
     to { width: 100%; }
 }
-
 @keyframes blink {
     from, to { border-color: transparent; }
     50% { border-color: blue; }
 }
-
-
 .large-icon{
     font-size: 3rem;
 }
-
-
-
 .about h1:hover{
     text-decoration: underline;
     color: rgb(136, 136, 228);
@@ -95,47 +77,37 @@
   transform: scale(0.9); /* This will decrease the size of the card by 10% */
 }
 .card:hover {
-  transform: scale(0.94); /* This will increase the size of the card by 5% */
+  transform: scale(0.97); /* This will increase the size of the card by 5% */
   transition: transform 0.3s; /* This will animate the transformation over 0.3 seconds */
 }
-
 .row-cards {
     --bs-gutter-x: 0.0rem; /* Adjust this value to increase or decrease the horizontal gap */
 }
-
-
 @media (max-width:750px) {
     .toggle{
         display: block;
         cursor: pointer;
     }
-
     .menu{
         display: none;
         width: 100%;
     }
-
-    
     .nav_bar{
         flex-direction: column;
         width: 100%;
         align-items: flex-start;
     }
-
     .menu ul{
         flex-direction: column;
         width: 100%;
     }
-
     .menu ul li{
         text-align: center;
     }
-
     .menu.active{
         display: flex;
         justify-content: center;
     }
-
     .photo img
     {
         background-color: rgb(223, 233, 235);
@@ -145,5 +117,5 @@
         width: 300px;
         box-shadow: 4px 12px 20px 1px rgb(30, 58, 138);
         margin-top: 30px;
-    }   
+    }
 }
