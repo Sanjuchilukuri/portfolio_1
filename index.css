@@ -50,7 +50,7 @@
     margin-top: 30px;
 }
 #animated-text {
-    color: blue;
+    color: black;
     font-size: 2em;  /* Adjust as per your requirement */
     border-right: .1em solid blue;
     white-space: pre;
@@ -83,6 +83,20 @@
 .row-cards {
     --bs-gutter-x: 0.0rem; /* Adjust this value to increase or decrease the horizontal gap */
 }
+
+
+.mnb{
+    background-color: rgb(213, 213, 213);
+    width: 80%;
+    border: 2px solid transparent;
+}
+.mnb:focus{
+    background-color: white;
+    border: 2px solid rgb(131, 131, 206);  /* This changes the border color to blue on focus */
+    outline: none;
+   
+}
+
 @media (max-width:750px) {
     .toggle{
         display: block;
