@@ -7,8 +7,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: white;
-    border-bottom:2px black solid ;
+    background-color: transparent;
+    border-bottom:2px black solid;
+    backdrop-filter: blur(7px);
 }
 .name{
     color: black;
