@@ -18,6 +18,7 @@
     font-weight: 700;
 }
 .menu ul{
+    margin-bottom:0px ;
     display: flex;
 }
 .menu li{
